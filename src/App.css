@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 #root {
+  font-family: "Open Sans";
   background: #343434;
   width: 100%;
   text-align: center;
+  min-height: 100vh;
   /* To-do: Change font to Open Sans */
 }
 
 .logo {
   width: 40%;
+  max-width: 550px;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -24,19 +29,14 @@
 } */
 
 .navbar {
+  justify-content: center;
   display: flex;
-  border-bottom: 3px solid #F0475F;
-}
 
-.dropbtn {
-  background: transparent;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-.dropbtn:focus{
-  outline: none;
+  /* FIXED */
+  border-bottom: 3px solid #F0475F;
+
+  /* DYNAMIC */
+  /* border-bottom: 0.2vw solid #F0475F; */
 }
 
 .dropdown {
@@ -44,23 +44,50 @@
   display: inline-block;
 }
 
+.dropbtn {
+  background: transparent;
+  color: white;
+  border: none;
+
+  /* FIXED */
+  padding: 0px 21px 12px;
+  font-size: 20px;
+
+  /* DYNAMIC */
+  /* padding: 0px 1.45vw 0.85vw;
+  font-size: 1.4vw; */
+}
+.dropbtn:focus{
+  outline: none;
+}
+
 .dropdown-content {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
   display: none;
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: max-content;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  background-color: #8b0000;
+  color: white;
+  border-bottom: 1px solid white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #5f0000;
+  color: white;
+}
 
 .dropdown:hover .dropdown-content {display: block;}
 
