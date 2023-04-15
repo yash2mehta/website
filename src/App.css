@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+#root {
+  font-family: "Open Sans";
+  background: #343434;
+  width: 100%;
+  text-align: center;
+  min-height: 100vh;
+  /* To-do: Change font to Open Sans */
+}
+
+.body {
+  margin: 0 auto;
+  padding: 1rem;
+  color:white;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
+
+
