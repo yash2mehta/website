@@ -1,20 +1,23 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 import Navbar from './Navbar/Navbar';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter,Routes, Route } from 'react-router-dom'
+
+import ClubStructure from './AboutUs/ClubStructure';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <div className="App">
     <BrowserRouter>
-      <div className="App">
-        <Navbar/>
-        <h1>Some content</h1>
-      </div>
+        {/* <Navbar/> */}
+        <Routes>
+          <Route path='/aboutus/clubstructure' Component={ClubStructure} />
+        </Routes>
     </BrowserRouter>
+    </div>
   )
 }
 

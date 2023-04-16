@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { MenuOutlined } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
+import { Layout, MenuProps } from 'antd';
 import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
 import useMediaQuery from "../hooks/useMediaQuery";
 import "./navbar.css";
+
+const { Header, Content, Footer } = Layout;
 
 
 const items: MenuProps['items'] = [
@@ -13,7 +15,7 @@ const items: MenuProps['items'] = [
       key: 'home',
     },
     {
-      label: <Link to='/aboutus'>About Us</Link>,
+      label: 'About Us',
       key: 'aboutus',
       children: [
         {
@@ -96,9 +98,9 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div>
+      <Header>
         {isAboveMediumScreens ? (
-              <Menu className="navbar-menu" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+                  <Menu className="navbar-menu" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
         ) : (
             <div>
               <button onClick={toggleOpen}><MenuOutlined /></button>
@@ -107,8 +109,8 @@ const Navbar: React.FC = () => {
                 )}
             </div>
         )}
-    </div>
-  
+        </Header>
+
   );
 };
 
