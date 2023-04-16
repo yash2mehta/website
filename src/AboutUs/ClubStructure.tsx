@@ -1,4 +1,3 @@
-import React from 'react';
 import ImagePlaceholder from '../assets/ImagePlaceholder.png';
 import ClubStructureDiagram from '../assets/ClubStructureDiagram.png';
 
@@ -19,7 +18,7 @@ const ClubStructure = () => {
             }}>
                 <h1 className='text-5xl font-bold'>Club Structure</h1>
             </div>
-            {/*  */}
+
             {/* Club Structure Diagram */}
             <div className='flex m-10 items-center justify-center'>
                 <img src={ClubStructureDiagram}/>

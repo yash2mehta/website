@@ -7,6 +7,8 @@ import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import ClubStructure from './AboutUs/ClubStructure';
 import ClubAdvisors from './AboutUs/ClubAdvisors';
 import Testimonials from './AboutUs/Testimonials';
+import ManagementCommittee from './AboutUs/ManagementCommittee';
+
 
 
 
@@ -21,6 +23,7 @@ function App() {
           <Route path='/aboutus/clubstructure' Component={ClubStructure} />
           <Route path='/aboutus/clubadvisors' Component={ClubAdvisors} />
           <Route path='/aboutus/testimonials' Component={Testimonials} />
+          <Route path='/aboutus/managementcommittee' Component={ManagementCommittee} />
         </Routes>
     </BrowserRouter>
     </div>

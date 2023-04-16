@@ -27,8 +27,8 @@ const items: MenuProps['items'] = [
           key: 'clubstructure',
         },
         {
-          label: <Link to='/aboutus/executivecommittee'>Executive Committee</Link>,
-          key: 'executivecommittee',
+          label: <Link to='/aboutus/managementcommittee'>Management Committee</Link>,
+          key: 'managementcommittee',
         },
         {
           label: <Link to='/aboutus/Club Advisors'>Club Advisors</Link>,
