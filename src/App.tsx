@@ -14,8 +14,13 @@ function App() {
       <div className="App">
         <Navbar/>
         <h1>Some content</h1>
-        <Footer/>
+        <h1>Some content</h1>
+        <h1>Some content</h1>
+        <h1>Some content</h1>
+        <h1>Some content</h1>
+        <h1>Some content</h1>
       </div>
+      <Footer/>
     </BrowserRouter>
   )
 }
