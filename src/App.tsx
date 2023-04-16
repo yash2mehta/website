@@ -1,20 +1,32 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 import Navbar from './Navbar/Navbar';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter,Routes, Route } from 'react-router-dom'
+
+import ClubStructure from './AboutUs/ClubStructure';
+import ClubAdvisors from './AboutUs/ClubAdvisors';
+import Testimonials from './AboutUs/Testimonials';
+import ManagementCommittee from './AboutUs/ManagementCommittee';
+
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <div>
     <BrowserRouter>
-      <div className="App">
-        <Navbar/>
-        <h1>Some content</h1>
-      </div>
+        {/* <Navbar/> */}
+        <Routes>
+          <Route path='/aboutus/clubstructure' Component={ClubStructure} />
+          <Route path='/aboutus/clubadvisors' Component={ClubAdvisors} />
+          <Route path='/aboutus/testimonials' Component={Testimonials} />
+          <Route path='/aboutus/managementcommittee' Component={ManagementCommittee} />
+        </Routes>
     </BrowserRouter>
+    </div>
   )
 }
 
