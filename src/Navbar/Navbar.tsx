@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { MenuOutlined } from '@ant-design/icons';
-import { Layout, MenuProps } from 'antd';
+import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
 import useMediaQuery from "../hooks/useMediaQuery";
 import "./navbar.css";
-
-const { Header, Content, Footer } = Layout;
 
 
 const items: MenuProps['items'] = [
@@ -15,7 +13,7 @@ const items: MenuProps['items'] = [
       key: 'home',
     },
     {
-      label: 'About Us',
+      label: <Link to='/aboutus'>About Us</Link>,
       key: 'aboutus',
       children: [
         {
@@ -27,8 +25,8 @@ const items: MenuProps['items'] = [
           key: 'clubstructure',
         },
         {
-          label: <Link to='/aboutus/managementcommittee'>Management Committee</Link>,
-          key: 'managementcommittee',
+          label: <Link to='/aboutus/executivecommittee'>Executive Committee</Link>,
+          key: 'executivecommittee',
         },
         {
           label: <Link to='/aboutus/Club Advisors'>Club Advisors</Link>,
@@ -98,9 +96,9 @@ const Navbar: React.FC = () => {
   };
 
   return (
-      <Header>
+    <div>
         {isAboveMediumScreens ? (
-                  <Menu className="navbar-menu" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+              <Menu className="navbar-menu" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
         ) : (
             <div>
               <button onClick={toggleOpen}><MenuOutlined /></button>
@@ -109,8 +107,8 @@ const Navbar: React.FC = () => {
                 )}
             </div>
         )}
-        </Header>
-
+    </div>
+  
   );
 };
 
