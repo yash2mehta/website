@@ -1,12 +1,10 @@
 import React from 'react';
 import ImagePlaceholder from '../assets/ImagePlaceholder.png';
 import ClubStructureDiagram from '../assets/ClubStructureDiagram.png';
-import './clubstructure.css'
-
 
 const ClubStructure = () => {
     return (
-        <div>
+        <div className="mb-10">
             {/* Header */}
             <div style={{ 
             display: 'flex',
