@@ -29,7 +29,7 @@ const ClubAdvisors = () => {
                         to improve and streamline organizational processes. 
                         </h2>
                     </div>
-   
+
                 </div>
             </div>
 
