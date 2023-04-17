@@ -1,5 +1,29 @@
 .footer {
+    color: #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    height: 100px;
+    padding: 0.5rem 1rem;
     background: #ECB8B6;
+}
+
+.centered-container {
+    width: 100%
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 0.8rem; */
+}
+
+.icon-container * {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
 }
