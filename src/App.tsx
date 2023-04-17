@@ -13,8 +13,6 @@ import Testimonials from './AboutUs/Testimonials';
 import ManagementCommittee from './AboutUs/ManagementCommittee';
 
 
-
-
 function App() {
   const [count, setCount] = useState(0)
 
