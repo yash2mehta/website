@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
 import './App.css';
 
 import Navbar from './Navbar/Navbar';
+
 import Navbar2 from './Navbar/Navbar2'
 
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
@@ -12,16 +14,11 @@ import ClubAdvisors from './AboutUs/ClubAdvisors';
 import Testimonials from './AboutUs/Testimonials';
 import ManagementCommittee from './AboutUs/ManagementCommittee';
 
-
-
-
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
     <BrowserRouter>
-        {/* <Navbar/> */}
         <Navbar2/>
         <Routes>
           <Route path='/aboutus/clubstructure' Component={ClubStructure} />
@@ -30,7 +27,6 @@ function App() {
           <Route path='/aboutus/managementcommittee' Component={ManagementCommittee} />
         </Routes>
     </BrowserRouter>
-    </div>
   )
 }
 
