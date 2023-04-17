@@ -82,7 +82,7 @@ const items: MenuProps['items'] = [
 
 const Navbar: React.FC = () => {
   const [current, setCurrent] = useState('');
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1240px)");
+  const isAboveMediumScreens = useMediaQuery("(min-width: 768px)");
   const [hamburgerToggle, setHamburgerToggle] = useState(false);
 
   const onClick: MenuProps['onClick'] = (e) => {
