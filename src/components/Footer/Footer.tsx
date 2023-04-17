@@ -10,16 +10,16 @@ function Footer() {
       <div className="footer">
         <div className="centered-container">
           <div className="icon-container">
-            <a href="#">
+            <a target="_blank" href="https://www.instagram.com/sutd.marketwatch/">
               <FaInstagram/>
             </a>
-            <a href="#">
+            {/* <a href="#">
               <FaFacebook/>
-            </a>
-            <a href="#">
+            </a> */}
+            <a target="_blank" href="https://sg.linkedin.com/company/sutd-marketwatch">
               <FaLinkedin/>
             </a>
-            <a href="#">
+            <a target="_blank" href="mailto:marketwatch@club.sutd.edu.sg">
               <FiMail/>
             </a>
           </div>  

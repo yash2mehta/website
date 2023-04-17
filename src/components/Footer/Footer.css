@@ -3,13 +3,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     padding: 0.5rem 1rem;
     background: #ECB8B6;
 }
+.footer a {
+    color: #e4e4e4;
+}
+.footer a :hover {
+    color: #e44c56;
+}
 
 .centered-container {
-    width: 100%
+    width: 100%;
 }
 
 .icon-container {
