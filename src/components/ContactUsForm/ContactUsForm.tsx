@@ -54,22 +54,26 @@ export const ContactUsForm: React.FC<{}> = () => {
 						<label>Name</label>
 					</Col>
 					<Col span={24}></Col>
-					<Col span={11}>
-						<Field
-							id="firstName"
-							name="firstName"
-							placeholder="  First Name"
-							class="nameField field"
-						/>
+					<Col span={12}>
+						<div className="mr-4 field-container">
+							<Field
+								id="firstName"
+								name="firstName"
+								placeholder="  First Name"
+								class="nameField field"
+							/>
+						</div>
 					</Col>
-					<Col span={2}></Col>
-					<Col span={11}>
-						<Field
-							id="lastName"
-							name="lastName"
-							placeholder="  Last Name"
-							class="nameField field"
-						/>
+
+					<Col span={12}>
+						<div className="ml-4 field-container">
+							<Field
+								id="lastName"
+								name="lastName"
+								placeholder="  Last Name"
+								class="nameField field"
+							/>
+						</div>
 					</Col>
 				</Row>
 				<br></br>
@@ -78,12 +82,14 @@ export const ContactUsForm: React.FC<{}> = () => {
 						<label className="fieldLabel">Email</label>
 					</Col>
 					<Col span={24}>
-						<Field
-							id="email"
-							name="email"
-							placeholder=""
-							class="longField field"
-						/>
+						<div className="field-container">
+							<Field
+								id="email"
+								name="email"
+								placeholder=""
+								class="longField field"
+							/>
+						</div>
 					</Col>
 				</Row>
 				<br></br>
@@ -92,12 +98,14 @@ export const ContactUsForm: React.FC<{}> = () => {
 						<label className="fieldLabel">Subject</label>
 					</Col>
 					<Col span={24}>
-						<Field
-							id="subject"
-							name="subject"
-							placeholder=""
-							class="longField field"
-						/>
+						<div className="field-container">
+							<Field
+								id="subject"
+								name="subject"
+								placeholder=""
+								class="longField field"
+							/>
+						</div>
 					</Col>
 				</Row>
 				<br></br>
@@ -106,18 +114,20 @@ export const ContactUsForm: React.FC<{}> = () => {
 						<label className="fieldLabel">Message</label>
 					</Col>
 					<Col span={24}>
-						<Field
-							id="message"
-							name="message"
-							placeholder=""
-							component="textarea"
-							class="messageArea field"
-						/>
+						<div className="field-container pt-2">
+							<Field
+								id="message"
+								name="message"
+								placeholder=""
+								component="textarea"
+								class="messageArea field"
+							/>
+						</div>
 					</Col>
 				</Row>
 				<br></br>
 				<Row justify={"center"}>
-					<button type="submit" className="submit-button">
+					<button type="submit" className="submit-button bg-[#ecb8b5]">
 						Submit
 					</button>
 				</Row>

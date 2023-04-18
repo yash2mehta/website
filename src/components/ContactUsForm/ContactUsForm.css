@@ -14,9 +14,7 @@
 }
 
 .field {
-	background-color: #d9d9d9;
-	border-color: black;
-	border-width: 1.5px;
+	background-color: transparent;
 }
 
 .fieldLabel {
@@ -24,6 +22,19 @@
 	color: #ab0000;
 	font-size: large;
 	font-weight: 600;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
+.field-container {
+	background-color: #d9d9d9;
+	border-color: black;
+	border-width: 1.5px;
+	padding: 2px 10px;
 }
 
 ::placeholder {
