@@ -1,11 +1,11 @@
 import React from "react";
-import RedBanner from "../../components/RedBanner";
+import RedBanner from "../components/RedBanner";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { LatLngExpression } from "leaflet";
 import { Row, Col, Typography } from "antd";
 import "leaflet/dist/leaflet.css";
 import "./ContactUs.css";
-import { ContactUsForm } from "../../components/ContactUsForm/ContactUsForm";
+import { ContactUsForm } from "../components/ContactUsForm/ContactUsForm";
 
 const ContactUs: React.FC = () => {
 	const position: LatLngExpression = [1.3404822924519935, 103.96269799696039];
