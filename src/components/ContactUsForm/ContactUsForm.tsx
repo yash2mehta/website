@@ -1,22 +1,52 @@
 import * as React from "react";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, Field, FormikHelpers } from "formik";
 import { Row, Col } from "antd";
 import "./ContactUsForm.css";
+import emailjs from "@emailjs/browser";
+import * as Yup from "yup";
 
-interface MyFormValues {
+interface ContactUsFormValues {
 	firstName: string;
+	lastName: string;
+	email: string;
+	subject: string;
+	message: string;
 }
 
 export const ContactUsForm: React.FC<{}> = () => {
-	const initialValues: MyFormValues = { firstName: "" };
+	const initialValues: ContactUsFormValues = {
+		firstName: "",
+		lastName: "",
+		email: "",
+		subject: "",
+		message: "",
+	};
+
+	const sendEmail = (
+		values: ContactUsFormValues,
+		actions: FormikHelpers<ContactUsFormValues>
+	) => {
+		console.log({ values, actions });
+		emailjs.send("service_id", "template_id", values as any, "publc_key");
+		alert(JSON.stringify(values, null, 2));
+		actions.setSubmitting(false);
+	};
+
 	return (
 		<Formik
 			initialValues={initialValues}
 			onSubmit={(values, actions) => {
-				console.log({ values, actions });
-				alert(JSON.stringify(values, null, 2));
-				actions.setSubmitting(false);
+				sendEmail(values, actions);
 			}}
+			validationSchema={Yup.object({
+				firstName: Yup.string().required("* First Name field is required"),
+				lastName: Yup.string().required("* Last Name field is required"),
+				subject: Yup.string().required("* Subject field is required"),
+				email: Yup.string()
+					.email("Invalid email address")
+					.required("* Email field is required"),
+				message: Yup.string().required("* Message field is required"),
+			})}
 		>
 			<Form>
 				<Row>
