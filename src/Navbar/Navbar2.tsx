@@ -51,7 +51,10 @@ const Navbar2 = () => {
                         <Link to='/aboutus/managementcommittee'>Management Committee</Link>
                     </Menu.Item>
                     <Menu.Item key="clubadvisors">
-                        <Link to='/aboutus/Club Advisors'>Club Advisors</Link>
+                        <Link to='/aboutus/clubadvisors'>Club Advisors</Link>
+                    </Menu.Item>
+                    <Menu.Item key="testimonials">
+                        <Link to='/aboutus/testimonials'>Testimonials</Link>
                     </Menu.Item>
                 </SubMenu>
                 <Menu.Item key="events">
