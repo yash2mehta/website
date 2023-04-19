@@ -11,3 +11,9 @@ h2 {
 	font-weight: 500;
 	color: black;
 }
+
+.subHeader {
+	font-weight: 700;
+	color: #ab0000;
+	font-size: x-large;
+}

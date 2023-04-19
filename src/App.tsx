@@ -1,8 +1,6 @@
-import { useState } from "react";
 import "./App.css";
 import Navbar2 from "./components/Navbar/Navbar2";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import ClubStructure from "./AboutUs/ClubStructure";
 import ClubAdvisors from "./AboutUs/ClubAdvisors";
 import Testimonials from "./AboutUs/Testimonials";

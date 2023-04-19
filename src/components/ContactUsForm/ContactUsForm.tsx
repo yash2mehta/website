@@ -1,6 +1,6 @@
-import * as React from "react";
+import "react";
 import { Formik, Form, Field, FormikHelpers } from "formik";
-import { Row, Col } from "antd";
+import { Row, Col, message } from "antd";
 import "./ContactUsForm.css";
 import emailjs from "@emailjs/browser";
 import * as Yup from "yup";
@@ -26,9 +26,22 @@ export const ContactUsForm: React.FC<{}> = () => {
 		values: ContactUsFormValues,
 		actions: FormikHelpers<ContactUsFormValues>
 	) => {
-		console.log({ values, actions });
-		emailjs.send("service_id", "template_id", values as any, "publc_key");
-		alert(JSON.stringify(values, null, 2));
+		try {
+			emailjs.send(
+				"service_8r0ixvf",
+				"template_u1j3sr9",
+				values as any,
+				"dw4Wq3Wx9Rof3Vn4i"
+			);
+			message.success("Form has been successfully sent!");
+		} catch {
+			console.error("Error sending email");
+			message.error(
+				"There was an error sending the form, please try reaching out to us via our email instead."
+			);
+		}
+
+		// alert(JSON.stringify(values, null, 2));
 		actions.setSubmitting(false);
 	};
 

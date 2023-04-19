@@ -28,14 +28,14 @@ const ContactUs: React.FC = () => {
 			</Row>
 			<Row style={{ padding: "2vw" }}>
 				<Col span={12} xs={24} sm={24} md={24} lg={12}>
-					<h2>Address</h2>
+					<h2 className="subHeader">Address</h2>
 					<p className="normalText">
 						Singapore University of Technology and Design
 					</p>
 					<p className="normalText">8 Somapah Road</p>
 					<p className="normalText">Singapore 487372</p>
-
-					<h2>Email</h2>
+					<br />
+					<h2 className="subHeader">Email</h2>
 					<a href="marketwatch@club.sutd.edu.sg" className="normalText">
 						marketwatch@club.sutd.edu.sg
 					</a>
