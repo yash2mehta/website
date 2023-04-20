@@ -32,7 +32,7 @@ const Navbar2 = () => {
                 {/* <Menu.Item key="1"><img className='h-fit' src={Logo}/></Menu.Item> */}
                 <img className="max-h-16 my-auto" src={Logo}/>
                 <Menu.Item key="home">
-                    <Link to='/home'>Home</Link>
+                    <Link to='/'>Home</Link>
                 </Menu.Item>
                 <SubMenu
                     key="aboutus"
