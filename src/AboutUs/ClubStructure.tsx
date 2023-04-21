@@ -28,7 +28,7 @@ const ClubStructure = () => {
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mx-10">
               <div className="p-4">
                 <h2 className="text-2xl text-primary-300 font-semibold">President</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit faucibus magna, vel suscipit nisi feugiat id. Praesent congue malesuada erat, vitae convallis turpis faucibus at.</p>
+                <p>The President of the club has a critical role in overseeing the overall strategy and management of the organization. They are responsible for managing different departments, planning and coordinating club events, maintaining relationships with key industry experts and potential sponsors, representing the club to external stakeholders, and ensuring compliance with relevant regulations and policies. The President also manages the club's budget, develops and maintains policies and procedures, and engages in professional development activities. Through their leadership, the President plays a crucial role in ensuring that the club operates efficiently and effectively, while also providing new opportunities and resources for club members.</p>
               </div>
               <div className="p-4">
                 <h2 className="text-2xl text-primary-300 font-semibold">Vice President</h2>

@@ -6,6 +6,7 @@ import ClubAdvisors from "./AboutUs/ClubAdvisors";
 import Testimonials from "./AboutUs/Testimonials";
 import ManagementCommittee from "./AboutUs/ManagementCommittee";
 import ContactUs from "./ContactUs/ContactUs";
+import Sponsors from "./Partners/Sponsors"
 
 function App() {
 	return (
@@ -20,6 +21,8 @@ function App() {
 					Component={ManagementCommittee}
 				/>
 				<Route path="/contactus" Component={ContactUs} />
+
+				<Route path="/partners" Component={Sponsors} />
 			</Routes>
 		</BrowserRouter>
 	);
