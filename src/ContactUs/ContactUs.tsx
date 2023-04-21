@@ -27,7 +27,7 @@ const ContactUs: React.FC = () => {
 				</MapContainer>
 			</Row>
 			<Row style={{ padding: "2vw" }}>
-				<Col span={12} xs={24} sm={24} md={24} lg={12}>
+				<Col className="mb-3" span={12} xs={24} sm={24} md={24} lg={12}>
 					<h2 className="subHeader">Address</h2>
 					<p className="normalText">
 						Singapore University of Technology and Design
@@ -36,7 +36,7 @@ const ContactUs: React.FC = () => {
 					<p className="normalText">Singapore 487372</p>
 					<br />
 					<h2 className="subHeader">Email</h2>
-					<a href="marketwatch@club.sutd.edu.sg" className="normalText">
+					<a href="mailto:marketwatch@club.sutd.edu.sg" className="normalText">
 						marketwatch@club.sutd.edu.sg
 					</a>
 				</Col>

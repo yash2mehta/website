@@ -20,7 +20,7 @@ const ClubStructure = () => {
             </div>
 
             {/* Club Structure Diagram */}
-            <div className='flex m-10 items-center justify-center'>
+            <div className='flex my-10 mx-5 items-center justify-center'>
                 <img src={ClubStructureDiagram}/>
             </div>
 
