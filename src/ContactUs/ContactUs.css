@@ -1,0 +1,19 @@
+.leaflet-container {
+	height: 60vh;
+	width: 100vw;
+}
+
+h2 {
+	color: #ab0000;
+}
+
+.normalText {
+	font-weight: 500;
+	color: black;
+}
+
+.subHeader {
+	font-weight: 700;
+	color: #ab0000;
+	font-size: x-large;
+}
