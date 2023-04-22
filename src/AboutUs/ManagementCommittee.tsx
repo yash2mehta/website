@@ -20,7 +20,7 @@ const ManagementCommittee = () => {
             </div>
 
             {/* Banner */}
-            <div className="bg-primary-200 flex items-center justify-center" style={{height:150}}>
+            <div className="bg-primary-300 flex items-center justify-center" style={{height:150}}>
                 <h1 className="text-3xl text-white font-bold text-center">
                     Senior Leadership Team
                 </h1>
@@ -84,7 +84,7 @@ const ManagementCommittee = () => {
             <div className="m-20"></div>
 
             {/* Banner */}
-            <div className="bg-primary-200 flex items-center justify-center" style={{height:150}}>
+            <div className="bg-primary-300 flex items-center justify-center" style={{height:150}}>
             <h1 className="text-3xl text-white font-bold text-center">
                 Operation Team
             </h1>

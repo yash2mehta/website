@@ -6,8 +6,8 @@ const ClubAdvisors = () => {
     return(
         <div className="min-h-10000">
             {/* Banner Red */}
-            <div className="bg-primary-200 flex items-center justify-center" style={{height:150}}>
-                <h1 className="text-6xl text-white font-bold text-center align-middle">
+            <div className="bg-primary-300 flex items-center justify-center" style={{height:150}}>
+                <h1 className="text-3xl text-white font-bold text-center align-middle">
                     Club Advisors
                 </h1>
             </div>
