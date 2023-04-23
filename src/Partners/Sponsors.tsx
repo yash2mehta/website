@@ -107,24 +107,32 @@ const Sponsors: React.FC = () => {
               placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              size={21}
+              style={{ border: "1px solid #ECB8B5" }}
             />
             <input
               type="email"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              size={21}
+              style={{ border: "1px solid #ECB8B5" }}
             />
             <input
               type="text"
               placeholder="Company Name"
               value={companyName}
               onChange={(e) => setCompanyName(e.target.value)}
+              size={21}
+              style={{ border: "1px solid #ECB8B5" }}
             />
             <textarea
               placeholder="Message"
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              size={21}
+              style={{ border: "1px solid #ECB8B5" }}
             />
             <button
               style={{
