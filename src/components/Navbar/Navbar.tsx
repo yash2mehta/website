@@ -36,7 +36,7 @@ const items: MenuProps["items"] = [
 		],
 	},
 	{
-		label: <Link to="/events">Events</Link>,
+		label: <Link to="/Events">Events</Link>,
 		key: "events",
 	},
 	{
