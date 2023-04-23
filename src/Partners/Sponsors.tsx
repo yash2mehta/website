@@ -1,6 +1,34 @@
 import React from "react";
+import { useState } from "react";
 
 const Sponsors: React.FC = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleButtonClick = () => {
+    setShowPopup(true);
+  };
+
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const emailBody = `Name: ${name}\nEmail: ${email}\nCompany Name: ${companyName}\nMessage: ${message}`;
+    const mailtoUrl = `mailto:marketwatch@club.sutd.edu.sg?subject=Partner Inquiry&body=${encodeURIComponent(
+      emailBody
+    )}`;
+    window.location.href = mailtoUrl;
+    // Handle form submission logic here
+    // You can access form data from the state variables: name, email, companyName, message
+    // Close the popup after successful form submission
+    setShowPopup(false);
+  };
+
+  const handleCloseClick = () => {
+    setShowPopup(false);
+  };
+
   return (
     <>
       <div
@@ -26,10 +54,96 @@ const Sponsors: React.FC = () => {
             borderRadius: "30px",
             marginTop: "20px",
           }}
+          onClick={handleButtonClick}
         >
           Become our partner
         </button>
       </div>
+      {showPopup && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            overflow: "hidden", // Added to hide horizontal scrollbar
+          }}
+        >
+          <form
+            style={{
+              backgroundColor: "white",
+              height: "400px",
+              width: "600px",
+              padding: "20px",
+              borderRadius: "10px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+            onSubmit={handleFormSubmit}
+          >
+            <button
+              style={{
+                alignSelf: "flex-end",
+                border: "none",
+                backgroundColor: "transparent",
+                cursor: "pointer",
+                fontSize: "20px",
+              }}
+              onClick={handleCloseClick}
+            >
+              x
+            </button>
+            <h2>Become Our Partner</h2>
+
+            <input
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="text"
+              placeholder="Company Name"
+              value={companyName}
+              onChange={(e) => setCompanyName(e.target.value)}
+            />
+            <textarea
+              placeholder="Message"
+              rows={4}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <button
+              style={{
+                backgroundColor: "#ECB8B5",
+                color: "#800000",
+                padding: "10px",
+                fontSize: "90%",
+                border: "none",
+                cursor: "pointer",
+                borderRadius: "30px",
+                marginTop: "20px",
+              }}
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      )}
       <div
         style={{
           paddingTop: "30px",
