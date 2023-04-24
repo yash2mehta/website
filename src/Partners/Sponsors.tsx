@@ -46,7 +46,7 @@ const Sponsors: React.FC = () => {
           className="text-white"
           style={{ fontWeight: "bold", fontSize: "350%" }}
         >
-          Our Partners
+          Our Sponsors
         </h1>
         <button
           style={{
@@ -61,7 +61,7 @@ const Sponsors: React.FC = () => {
           }}
           onClick={handleButtonClick}
         >
-          Become our partner
+          Become our Sponsor
         </button>
       </div>
       {showPopup && (
