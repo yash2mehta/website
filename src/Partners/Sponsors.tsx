@@ -46,7 +46,7 @@ const Sponsors: React.FC = () => {
           className="text-white"
           style={{ fontWeight: "bold", fontSize: "350%" }}
         >
-          Our Sponsors
+          Our Partners
         </h1>
         <button
           style={{
@@ -61,7 +61,7 @@ const Sponsors: React.FC = () => {
           }}
           onClick={handleButtonClick}
         >
-          Become our Sponsor
+          Become our Partner
         </button>
       </div>
       {showPopup && (
@@ -164,7 +164,7 @@ const Sponsors: React.FC = () => {
           marginRight: "30px",
         }}
       >
-        <h2 style={{ color: "#562D2D" }}>Platinum Sponsors</h2>
+        <h2 style={{ color: "#562D2D" }}>Sponsors</h2>
         <hr style={{ borderColor: "#562D2D" }} />
       </div>
       <div
@@ -198,7 +198,7 @@ const Sponsors: React.FC = () => {
           marginRight: "30px",
         }}
       >
-        <h2 style={{ color: "#562D2D" }}>Strategic Sponsors</h2>
+        <h2 style={{ color: "#562D2D" }}>Strategic Partners</h2>
         <hr style={{ borderColor: "#562D2D" }} />
       </div>
       <div
