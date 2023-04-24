@@ -16,8 +16,8 @@ const Home: React.FC = () => {
     return(
         <div className="min-h-10000">
             {/* Banner Red */}
-            <div className="bg-red-bg flex flex-col items-center justify-center h-fit gap-2.5 p-8">
-                <img className="object-cover w-full" style={{height:'20vw'}} src={logo_light}/>
+            <div className="bg-red-bg flex flex-col md:flex-row items-center justify-center h-fit gap-2.5 p-8">
+                <img className="object-cover h-32 md:h-auto w-full md:w-80" src={logo_light}/>
                 <h1 className="text-base text-white text-center align-middle">
                 Established in 2015, SUTD MarketWatch Club is the only student-led community at SUTD, exclusively designed for students interested in finance and investments.
                 <br></br><br></br>
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
                 </h1>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 text-center mb-5">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 text-center mb-5">
                 <div className="flex flex-1 flex-col items-center">
                     <div className="mx-10">
                         <h1 className="text-4xl text-primary-300 font-bold my-5">Our Activities</h1>
@@ -122,7 +122,7 @@ const Home: React.FC = () => {
                 </h1>
             </div>
 
-            <div className="bg-light-red grid grid-cols-1 gap-4 md:grid-cols-2 text-center py-5">
+            <div className="bg-light-red grid grid-cols-1 gap-4 md:grid-cols-3 text-center py-5">
                 <div className="flex flex-1 flex-col items-center">
                     <div className="mx-10">
                         <h1 className="text-2xl text-primary-300 font-bold my-3">Join MarketWatch as a Member</h1>
