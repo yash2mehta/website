@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css'
 
 import { Carousel, Card } from 'antd';
+import { Link } from "react-router-dom";
 
 import logo_light from "../../assets/logo_light.png"
 import CareerDevelopment from "../../assets/Career Development.jpg"
@@ -32,7 +33,7 @@ const Home: React.FC = () => {
                         At SUTD MarketWatch Club, we offer a wide range of activities, including workshops, guest lectures, panel sessions, networking events and case competitions. Ultimately, we provide a welcoming space to learn, grow, and connect with others 😊
                         </h2>
                     </div>
-                    <button
+                    <Link to="/events"
                     style={{
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
@@ -45,7 +46,7 @@ const Home: React.FC = () => {
                     }}
                     >
                         Learn more
-                    </button>
+                    </Link>
                 </div>
                 <div className="flex flex-1 flex-col items-center">
                     <div className="mx-10">
@@ -54,7 +55,7 @@ const Home: React.FC = () => {
                         Our club is committed to collaborating with industry leaders to create opportunities for our members to gain real-world experience and build their professional network. By partnering with us, you can help shape the future of finance and make a meaningful impact in developing the next generation of finance professionals. Contact us to explore ways of collaborating!
                         </h2>
                     </div>
-                    <button
+                    <Link to="/partners"
                     style={{
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
@@ -67,7 +68,7 @@ const Home: React.FC = () => {
                     }}
                     >
                         Learn more
-                    </button>
+                    </Link>
                 </div>
                 <div className="flex flex-1 flex-col items-center">
                     <div className="mx-10">
@@ -76,7 +77,7 @@ const Home: React.FC = () => {
                         Our research analysts and members conduct investment research, on fundamental analysis and technical analysis. They share these insights through published reports and pitch their ideas to industry leaders.
                         </h2>
                     </div>
-                    <button
+                    <Link to="/research"
                     style={{
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
@@ -89,7 +90,7 @@ const Home: React.FC = () => {
                     }}
                     >
                         Learn more
-                    </button>
+                    </Link>
                 </div>
             </div>
 
@@ -129,7 +130,7 @@ const Home: React.FC = () => {
                         We invite all SUTD students only to join us as a member. By doing so, you will obtain access to exclusive events, educational resources, networking opportunities, industry visits and many more activities, which are exclusively for the members. You will also receive priority in attending any public events that we host!
                         </h2>
                     </div>
-                    <button
+                    <Link to="/joinus"
                     style={{
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
@@ -142,7 +143,7 @@ const Home: React.FC = () => {
                     }}
                     >
                         Learn more
-                    </button>
+                    </Link>
                 </div>
                 <div className="flex flex-1 flex-col items-center">
                     <div className="mx-10">
@@ -155,7 +156,7 @@ const Home: React.FC = () => {
                         • Industry Talks: By collaborating with expert industry leaders, we can equip our members with the relevant, high-quality knowledge in the different domains of finance.
                         </h2>
                     </div>
-                    <button
+                    <Link to="/collaborate"
                     style={{
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
@@ -168,7 +169,7 @@ const Home: React.FC = () => {
                     }}
                     >
                         Learn more
-                    </button>
+                    </Link>
                 </div>
                 <div className="flex flex-1 flex-col items-center">
                     <div className="mx-10">
@@ -177,7 +178,7 @@ const Home: React.FC = () => {
                         Join our newsletter to stay updated on all our events and activities. We welcome anyone interested in finance to join our community and learn from our talented members and industry partners.
                         </h2>
                     </div>
-                    <button
+                    <Link to="/blog"
                     style={{
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
@@ -190,7 +191,7 @@ const Home: React.FC = () => {
                     }}
                     >
                         Learn more
-                    </button>
+                    </Link>
                 </div>
                 {/* <div className="w-2/3 mx-auto">
                     <img src={ImagePlaceholder2}/>
