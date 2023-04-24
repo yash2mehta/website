@@ -168,7 +168,7 @@ const Home = () => {
                     <div className="mx-10">
                         <h1 className="text-2xl text-primary-300 font-bold my-3">Stay Up-to-Date</h1>
                         <h2 className="text-sm text-black">
-                        We invite all SUTD students only to join us as a member. By doing so, you will obtain access to exclusive events, educational resources, networking opportunities, industry visits and many more activities, which are exclusively for the members. You will also receive priority in attending any public events that we host!
+                        Join our newsletter to stay updated on all our events and activities. We welcome anyone interested in finance to join our community and learn from our talented members and industry partners.
                         </h2>
                     </div>
                     <button
