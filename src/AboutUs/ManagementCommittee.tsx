@@ -6,6 +6,7 @@ import CommitteePic3 from "../assets/exco_photos/3.jpg";
 import CommitteePic4 from "../assets/exco_photos/4.jpg";
 import CommitteePic5 from "../assets/exco_photos/5.jpg";
 import CommitteePic6 from "../assets/exco_photos/6.jpg";
+import RedBanner from "../components/RedBanner";
 
 const ManagementCommittee = () => {
   return (
@@ -28,14 +29,7 @@ const ManagementCommittee = () => {
       </div> */}
 
       {/* Banner */}
-      <div
-        className="bg-primary-300 flex items-center justify-center"
-        style={{ height: 150 }}
-      >
-        <h1 className="text-3xl text-white font-bold text-center">
-          Senior Leadership Team
-        </h1>
-      </div>
+      <RedBanner bannerText="Senior Leadership"></RedBanner>
 
       {/* Senior Leadership Team Profiles */}
       <div className="grid grid-cols-1 md:grid-cols-3" style={{ height: 700 }}>
@@ -104,14 +98,7 @@ const ManagementCommittee = () => {
       {/* <div className="m-20"></div> */}
 
       {/* Banner */}
-      <div
-        className="bg-primary-300 flex items-center justify-center"
-        style={{ height: 150 }}
-      >
-        <h1 className="text-3xl text-white font-bold text-center">
-          Operation Team
-        </h1>
-      </div>
+      <RedBanner bannerText="Operation Team"></RedBanner>
 
       {/* Operation Team Profiles */}
       <div className="grid grid-cols-1 md:grid-cols-3" style={{ height: 700 }}>

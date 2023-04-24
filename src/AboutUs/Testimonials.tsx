@@ -1,5 +1,6 @@
-import React from 'react';
-import ImagePlaceholder2 from '../assets/ImagePlaceholder2.png'
+import React from "react";
+import ImagePlaceholder2 from "../assets/ImagePlaceholder2.png";
+import RedBanner from "../components/RedBanner";
 
 import Anirudh from "../assets/exco_photos/3.jpg";
 import Sheen from "../assets/exco_photos/5.jpg";
@@ -28,25 +29,26 @@ const TestimonialSectionLeft = ({image, header, header2, text}: props) => {
                 {/* <h1 className="text-3xl text-primary-300 font-bold mt-0 mb-3">{header2}</h1> */}
                 <h2 className="text-base">{text}</h2>
             </div>
-
-        </div>
+      </div>
     </div>
-    )
-}
+  );
+};
 
-const TestimonialSectionRight = ({image, header, header2, text}: props) => {
-    return (
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 my-20 mx-10">
-        <div className="flex flex-1 items-center">
-            <div className="mx-10">
-                <h1 className="text-4xl text-primary-300 font-bold my-0">{header}</h1>
-                <h1 className="text-3xl text-primary-300 font-bold mt-0 mb-3">{header2}</h1>
-                <h2 className="text-base">{text}</h2>
-            </div>
+const TestimonialSectionRight = ({ image, header, header2, text }: props) => {
+  return (
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 my-20 mx-10">
+      <div className="flex flex-1 items-center">
+        <div className="mx-10">
+          <h1 className="text-4xl text-primary-300 font-bold my-0">{header}</h1>
+          <h1 className="text-3xl text-primary-300 font-bold mt-0 mb-3">
+            {header2}
+          </h1>
+          <h2 className="text-base">{text}</h2>
         </div>
-        <div className="w-1/2 mx-auto">
-            <img src={image}/>
-        </div>
+      </div>
+      <div className="w-1/2 mx-auto">
+        <img src={image} />
+      </div>
     </div>
     )
 }
@@ -91,17 +93,28 @@ const Testimonials = () =>{
         },
     ]
     return (
-        <div>
-            {testimonials.map((testimonial: props, index: number) => (
-                index % 2 === 0 ? 
-                <TestimonialSectionLeft image={testimonial.image} header={testimonial.header} header2={testimonial.header2} text = {testimonial.text}/> :
-                <TestimonialSectionRight image={testimonial.image} header={testimonial.header} header2={testimonial.header2} text = {testimonial.text}/>
-            ))}
-        </div>
-    )
+    <div>
+      <RedBanner bannerText="Testimonials"></RedBanner>
 
-}
-
-
+      {testimonials.map((testimonial: props, index: number) =>
+        index % 2 === 0 ? (
+          <TestimonialSectionLeft
+            image={testimonial.image}
+            header={testimonial.header}
+            header2={testimonial.header2}
+            text={testimonial.text}
+          />
+        ) : (
+          <TestimonialSectionRight
+            image={testimonial.image}
+            header={testimonial.header}
+            header2={testimonial.header2}
+            text={testimonial.text}
+          />
+        )
+      )}
+    </div>
+  );
+};
 
 export default Testimonials;

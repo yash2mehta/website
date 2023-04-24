@@ -1,5 +1,6 @@
 import ImagePlaceholder from "../assets/ImagePlaceholder.png";
 import ClubStructureDiagram from "../assets/ClubStructureDiagram.png";
+import RedBanner from "../components/RedBanner";
 
 const ClubStructure = () => {
   return (
@@ -18,6 +19,7 @@ const ClubStructure = () => {
             }}>
                 <h1 className='text-5xl font-bold'>Club Structure</h1>
             </div> */}
+      <RedBanner bannerText="Club Structure"></RedBanner>
 
       {/* Club Structure Diagram */}
       <div className="flex my-10 mx-5 items-center justify-center mb-40 mt-20">
