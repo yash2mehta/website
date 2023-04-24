@@ -3,3 +3,7 @@
     background-color: #800000;
   }
   
+.ant-menu::before {
+  display: flex;
+  content: '',
+}
