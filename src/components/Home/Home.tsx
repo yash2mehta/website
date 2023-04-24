@@ -218,8 +218,6 @@ const Home: React.FC = () => {
                                         <div className='flex flex-col items-center'>
                                             <div className='font-bold'>
                                                 Sheen, Vice President of MarketWatch
-                                                <br></br>
-                                                (Class of 2024)
                                             </div>
                                             <br></br>
                                             <br></br>
@@ -236,8 +234,6 @@ const Home: React.FC = () => {
                                         <div className='flex flex-col items-center'>
                                             <div className='font-bold'>
                                                 Anirudh Bharadwaj, Treasurer of MarketWatch
-                                                <br></br>
-                                                (Class of 2025)
                                             </div>
                                             <br></br>
                                             <br></br>
@@ -270,8 +266,6 @@ const Home: React.FC = () => {
                                         <div className='flex flex-col items-center'>
                                             <div className='font-bold'>
                                                 Jignesh Motwani, MarketWatch member
-                                                <br></br>
-                                                (Class of 2025)
                                             </div>
                                             <br></br>
                                             <br></br>
@@ -288,8 +282,6 @@ const Home: React.FC = () => {
                                         <div className='flex flex-col items-center'>
                                             <div className='font-bold'>
                                                 Cyril, MarketWatch member 
-                                                <br></br>
-                                                (Class of 2026)
                                             </div>
                                             <br></br>
                                             <br></br>
@@ -306,8 +298,6 @@ const Home: React.FC = () => {
                                         <div className='flex flex-col items-center'>
                                             <div className='font-bold'>
                                                 James, MarketWatch member 
-                                                <br></br>
-                                                (Class of 2023)
                                             </div>
                                             <br></br>
                                             <br></br>
