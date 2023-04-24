@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import DBSLogo from "../assets/DBS logo.jpg"
+import StrategicPartners from "../assets/Strategic_Partners.png"
 
 const Sponsors: React.FC = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -185,7 +187,7 @@ const Sponsors: React.FC = () => {
           }}
         >
           <img
-            src="/DBS logo.jpg"
+            src={DBSLogo}
             alt="DBS Logo"
             style={{ maxWidth: "100%", maxHeight: "100%" }}
           />
@@ -209,7 +211,7 @@ const Sponsors: React.FC = () => {
         }}
       >
         <img
-          src="/Strategic_Partners.png"
+          src={StrategicPartners}
           alt="Strategic Partners"
           style={{ height: "400px" }}
         />

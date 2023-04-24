@@ -40,9 +40,9 @@ const TestimonialSectionRight = ({ image, header, header2, text }: props) => {
       <div className="flex flex-1 items-center">
         <div className="mx-10">
           <h1 className="text-4xl text-primary-300 font-bold my-0">{header}</h1>
-          <h1 className="text-3xl text-primary-300 font-bold mt-0 mb-3">
+          {/* <h1 className="text-3xl text-primary-300 font-bold mt-0 mb-3">
             {header2}
-          </h1>
+          </h1> */}
           <h2 className="text-base">{text}</h2>
         </div>
       </div>
@@ -80,13 +80,13 @@ const Testimonials = () =>{
             image: Parth
         },
         {
-            header: "Cyril",
+            header: "Cyril - Marketwatch member",
             header2: 'Class of 2026',
             text: "'This club has been instrumental in helping me develop my critical thinking and analytical skills. By taking part in the club’s projects, I've learned how to apply my engineering knowledge to the field and gained real-world experience in finance and have. It's been an invaluable experience!'",
             image: Cyril
         },
         {
-            header: "James",
+            header: "James - Marketwatch member",
             header2: 'Class of 2023',
             text: '"MarketWatch provided me with the platform to apply my classroom knowledge into practical investment research. The experience allowed me to develop critical thinking skills and foster relationships with like-minded peers." ',
             image: James

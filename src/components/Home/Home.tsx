@@ -249,7 +249,7 @@ const Home: React.FC = () => {
                                     <div className='border border-white p-4'>
                                         <div className='flex flex-col items-center'>
                                             <div className='font-bold'>
-                                                Yi Jie, MarketWatch member
+                                                Ryan, Publicity Director of MarketWatch
                                             </div>
                                             <br></br>
                                             <br></br>

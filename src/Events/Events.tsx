@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import RedBanner from "../components/RedBanner";
+// import RedBanner from "../components/RedBanner";
+import RedBanner from "../assets/red_banner.jpg";
 
 const Events: React.FC = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -9,7 +10,7 @@ const Events: React.FC = () => {
       <div
         className="banner"
         style={{
-          backgroundImage: "url(src/assets/red_banner.jpg)",
+          backgroundImage: `url(${RedBanner})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "350px",
