@@ -1,11 +1,17 @@
 import React from 'react';
 import './Home.css'
 
+import { Carousel, Card } from 'antd';
+
 import logo_light from "../../assets/logo_light.png"
 import CareerDevelopment from "../../assets/Career Development.jpg"
 import StrongNetwork from "../../assets/MarketWatch Alumni Network.jpg"
 
-const Home = () => {
+const Home: React.FC = () => {
+    const onChange = (currentSlide: number) => {
+        console.log(currentSlide);
+      };
+    
     return(
         <div className="min-h-10000">
             {/* Banner Red */}
@@ -191,6 +197,128 @@ const Home = () => {
                 </div> */}
             </div>
 
+            <div className="flex flex-1 flex-col items-center bg-gray-50">
+                <div className="mx-10 flex flex-col items-center">
+                    <h1 className="text-2xl text-primary-300 font-bold my-3">Testimonials</h1>
+
+                    {/* Decor Line */}
+                    <div className="w-1/2 h-0 border-b border-red-bg opacity-30" style={{marginBottom: "-0.5px"}}></div>{/* Margin half of border height */}
+                    <div className="w-1 h-1 rounded-sm bg-red-bg -mt-0.5"></div>
+
+
+                </div>
+                <div style={{width: '100%'}}>
+                    <Carousel afterChange={onChange} autoplay dots={{className: "carousel-dots"}}>
+                    {/* <Carousel afterChange={onChange} dots={{className: "carousel-dots"}}> */}
+                        <div>
+                            <h3 className="carousel-slide bg-gray-50">
+                                <Card bordered={false} className='bg-red-bg text-white rounded-none'>
+                                    <div className='border border-white p-4'>
+                                        <div className='flex flex-col items-center'>
+                                            <div className='font-bold'>
+                                                Sheen, Vice President of MarketWatch
+                                                <br></br>
+                                                (Class of 2024)
+                                            </div>
+                                            <br></br>
+                                            <br></br>
+                                            "I joined MarketWatch Club to learn more about finance, but I gained so much more than that. The club provided me with opportunities to network with industry professionals and develop leadership skills."
+                                        </div>
+                                    </div>
+                                </Card>
+                            </h3>
+                        </div>
+                        <div>
+                            <h3 className="carousel-slide bg-gray-50">
+                                <Card bordered={false} className='bg-red-bg text-white rounded-none'>
+                                    <div className='border border-white p-4'>
+                                        <div className='flex flex-col items-center'>
+                                            <div className='font-bold'>
+                                                Anirudh Bharadwaj, Treasurer of MarketWatch
+                                                <br></br>
+                                                (Class of 2025)
+                                            </div>
+                                            <br></br>
+                                            <br></br>
+                                            "MarketWatch Club is the perfect place to build a strong foundation in finance. Through its wide range of activities, members can gain industry knowledge and develop analytical skills that are essential in any finance-related field."
+                                        </div>
+                                    </div>
+                                </Card>
+                            </h3>
+                        </div>
+                        <div>
+                            <h3 className="carousel-slide bg-gray-50">
+                                <Card bordered={false} className='bg-red-bg text-white rounded-none'>
+                                    <div className='border border-white p-4'>
+                                        <div className='flex flex-col items-center'>
+                                            <div className='font-bold'>
+                                                Yi Jie, MarketWatch member
+                                            </div>
+                                            <br></br>
+                                            <br></br>
+                                            "I was amazed by the level of dedication and commitment shown by MarketWatch Club members. The teamwork, research, and analysis skills they showcased are a testament to the excellent training provided by the club."                                        
+                                        </div>
+                                    </div>
+                                </Card>
+                            </h3>
+                        </div>
+                        <div>
+                            <h3 className="carousel-slide bg-gray-50">
+                                <Card bordered={false} className='bg-red-bg text-white rounded-none'>
+                                    <div className='border border-white p-4'>
+                                        <div className='flex flex-col items-center'>
+                                            <div className='font-bold'>
+                                                Jignesh Motwani, MarketWatch member
+                                                <br></br>
+                                                (Class of 2025)
+                                            </div>
+                                            <br></br>
+                                            <br></br>
+                                            "As an international student, joining the SUTD MarketWatch Club has allowed me to feel more connected to the university and the finance industry. The club's diverse and inclusive community has provided me with a welcoming space to learn and grow. I'm grateful for the opportunities the club has provided me!"                                        
+                                        </div>
+                                    </div>
+                                </Card>
+                            </h3>
+                        </div>
+                        <div>
+                            <h3 className="carousel-slide bg-gray-50">
+                                <Card bordered={false} className='bg-red-bg text-white rounded-none'>
+                                    <div className='border border-white p-4'>
+                                        <div className='flex flex-col items-center'>
+                                            <div className='font-bold'>
+                                                Cyril, MarketWatch member 
+                                                <br></br>
+                                                (Class of 2026)
+                                            </div>
+                                            <br></br>
+                                            <br></br>
+                                            "This club has been instrumental in helping me develop my critical thinking and analytical skills. By taking part in the club’s projects, I've gained real-world experience in finance and have learned how to apply my engineering knowledge to the field. It's been an invaluable experience!"                                        
+                                        </div>
+                                    </div>
+                                </Card>
+                            </h3>
+                        </div>
+                        <div>
+                            <h3 className="carousel-slide bg-gray-50">
+                                <Card bordered={false} className='bg-red-bg text-white rounded-none'>
+                                    <div className='border border-white p-4'>
+                                        <div className='flex flex-col items-center'>
+                                            <div className='font-bold'>
+                                                James, MarketWatch member 
+                                                <br></br>
+                                                (Class of 2023)
+                                            </div>
+                                            <br></br>
+                                            <br></br>
+                                            "MarketWatch provided me with the platform to apply my classroom knowledge into practical investment research. The experience allowed me to develop critical thinking skills and foster relationships with like-minded peers."
+                                        </div>
+                                    </div>
+                                </Card>
+                            </h3>
+                        </div>
+                    </Carousel>
+                </div>
+            </div>
         </div>
     )
 }

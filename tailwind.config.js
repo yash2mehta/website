@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         "gray-20": "#E4E4E4",
-        // "gray-50": "#EFE6E6",
+        "gray-50": "#D9D9D9",
         // "gray-100": "#DFCCCC",
         // "gray-500": "#5E0000",
         "primary-100": "#F0475F",
