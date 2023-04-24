@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import RedBanner from "../components/RedBanner";
 
 const Events: React.FC = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -28,24 +29,8 @@ const Events: React.FC = () => {
           03 MAY 2023 | 6:30 pm to 10:30 pm
         </h3>
       </div>
-      <div
-        className="banner"
-        style={{
-          backgroundColor: "#E55C56",
-          height: "70px",
-          paddingTop: "10px",
-        }}
-      >
-        <h1
-          style={{
-            color: "white",
-            textAlign: "center",
-            lineHeight: "50px",
-          }}
-        >
-          Events
-        </h1>
-      </div>
+      <RedBanner bannerText="Events"></RedBanner>
+
       <div style={{ display: "flex" }}>
         <div
           className="box"
@@ -73,6 +58,7 @@ const Events: React.FC = () => {
             }}
           >
             <h4
+              className="font-semibold"
               style={{
                 paddingBottom: "10px",
                 paddingLeft: "15px",
@@ -120,6 +106,7 @@ const Events: React.FC = () => {
             }}
           >
             <h4
+              className="font-semibold"
               style={{
                 paddingBottom: "10px",
                 paddingLeft: "15px",

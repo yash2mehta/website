@@ -42,7 +42,12 @@ const Sponsors: React.FC = () => {
           padding: "20px",
         }}
       >
-        <h1 style={{ fontWeight: "bold", fontSize: "350%" }}>Our Partners</h1>
+        <h1
+          className="text-white"
+          style={{ fontWeight: "bold", fontSize: "350%" }}
+        >
+          Our Partners
+        </h1>
         <button
           style={{
             backgroundColor: "#ECB8B5",

@@ -3,19 +3,13 @@ import React from "react";
 import ImagePlaceholder2 from "../assets/ImagePlaceholder2.png";
 import ProfDouglasImage from "../assets/Prof Douglas.jpeg";
 import Robert from "../assets/Robert Wijaya.jpeg";
+import RedBanner from "../components/RedBanner";
 
 const ClubAdvisors = () => {
   return (
     <div className="min-h-10000">
       {/* Banner Red */}
-      <div
-        className="bg-primary-300 flex items-center justify-center"
-        style={{ height: 150 }}
-      >
-        <h1 className="text-3xl text-white font-bold text-center align-middle">
-          Club Advisors
-        </h1>
-      </div>
+      <RedBanner bannerText="Club Advisors"></RedBanner>
 
       {/* Club Advisor 1 */}
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 my-20 mx-10">
