@@ -10,7 +10,7 @@ import StrongNetwork from "../../assets/MarketWatch Alumni Network.jpg"
 
 const Home: React.FC = () => {
     const onChange = (currentSlide: number) => {
-        console.log(currentSlide);
+        // console.log(currentSlide);
       };
     
     return(
