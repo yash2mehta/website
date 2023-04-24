@@ -77,7 +77,7 @@ const Home: React.FC = () => {
                         Our research analysts and members conduct investment research, on fundamental analysis and technical analysis. They share these insights through published reports and pitch their ideas to industry leaders.
                         </h2>
                     </div>
-                    <Link to="/research"
+                    <Link to="/research/researchreports"
                     style={{
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
@@ -178,7 +178,7 @@ const Home: React.FC = () => {
                         Join our newsletter to stay updated on all our events and activities. We welcome anyone interested in finance to join our community and learn from our talented members and industry partners.
                         </h2>
                     </div>
-                    <Link to="/blog"
+                    <Link to="/news/blog"
                     style={{
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",

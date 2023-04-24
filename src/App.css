@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-#root {
+.root {
   /* max-width: 1280px; */
   /* margin: 0 auto; */
   /* padding: 1rem; */
@@ -13,7 +13,6 @@ body {
 }
 
 .App {
-  padding: 1rem;
   flex: 1;
 }
 
