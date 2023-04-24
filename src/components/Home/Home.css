@@ -1,0 +1,19 @@
+:where(.css-dev-only-do-not-override-htwhyh).ant-carousel .slick-dots.carousel-dots  li button {
+    background: #000;
+    opacity: 0.2;
+}
+
+:where(.css-dev-only-do-not-override-htwhyh).ant-carousel .slick-dots.carousel-dots  li.slick-active button{
+    background: #000;
+    opacity: 1;
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    line-height: 160px;
+    text-align: center;
+    margin: 1rem 2rem 3rem;
+}

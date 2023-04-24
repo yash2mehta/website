@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         "gray-20": "#E4E4E4",
-        // "gray-50": "#EFE6E6",
+        "gray-50": "#D9D9D9",
         // "gray-100": "#DFCCCC",
         // "gray-500": "#5E0000",
         "primary-100": "#F0475F",
@@ -17,6 +17,8 @@ export default {
         "primary-500": "#800000",
         // "secondary-400": "#FFCD5B",
         // "secondary-500": "#FFC132",
+        "red-bg": "#E55C56",
+        "light-red": "#ECB8B5",
       },
       backgroundImage: (theme) => ({
         // "gradient-yellowred":
@@ -34,11 +36,11 @@ export default {
         // circles: "url('./assets/Circles.png')",
       },
     },
-    screens: {
-      xs: "480px",
-      sm: "768px",
-      md: "1060px",
-    },
+    // screens: {
+    //   xs: "480px",
+    //   sm: "768px",
+    //   md: "1060px",
+    // },
   },
   plugins: [],
 }

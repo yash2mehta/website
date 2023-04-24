@@ -76,7 +76,7 @@ const CustomMenu = (props: { layout: string }) => {
           <Link to="/research/researchreports">Research Reports</Link>
         </Menu.Item>
         <Menu.Item key="specialfeatures">
-          <Link to="/news/specialfeatures">Special Features</Link>
+          <Link to="/research/presentationmaterials">Presentation Materials</Link>
         </Menu.Item>
       </SubMenu>
       <Menu.Item key="partners">
