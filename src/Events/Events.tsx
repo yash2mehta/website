@@ -21,11 +21,12 @@ const Events: React.FC = () => {
             textAlign: "center",
             marginBottom: "60px",
             paddingTop: "80px",
+            fontSize: 50,
           }}
         >
           Venture Capital Summit 2023
         </h1>
-        <h3 style={{ textAlign: "center" }}>
+        <h3 style={{ textAlign: "center", fontSize: 25}}>
           03 MAY 2023 | 6:30 pm to 10:30 pm
         </h3>
       </div>
