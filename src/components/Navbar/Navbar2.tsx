@@ -102,7 +102,7 @@ const Navbar2 = () => {
   const [hamburgerToggle, setHamburgerToggle] = useState(true);
 
   const toggleOpen: MenuProps["onClick"] = (e) => {
-    console.log("click ", e);
+    // console.log("click ", e);
     setHamburgerToggle(!hamburgerToggle);
   };
 
