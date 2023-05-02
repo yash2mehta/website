@@ -1,7 +1,7 @@
 import { Layout, Menu, ConfigProvider, Button, MenuProps } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useMediaQuery from "../../hooks/useMediaQuery";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MenuOutlined } from "@ant-design/icons";
 
 const { Header, Content, Footer } = Layout;
@@ -100,6 +100,11 @@ const Navbar2 = () => {
   const { SubMenu } = Menu;
   const isAboveMediumScreens = useMediaQuery("(min-width: 960px)");
   const [hamburgerToggle, setHamburgerToggle] = useState(true);
+  const location = useLocation();
+
+  useEffect(() => {
+    setHamburgerToggle(true);
+  }, [location]); //Runs only on every time location changes
 
   const toggleOpen: MenuProps["onClick"] = (e) => {
     // console.log("click ", e);
