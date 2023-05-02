@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-// import RedBanner from "../components/RedBanner";
-import RedBanner from "../assets/red_banner.jpg";
+import RedBanner from "../components/RedBanner";
+import EventsBg from "../assets/red_banner.jpg"
+import Event1 from "../assets/event1.jpg"
+import Event2 from "../assets/event2.png"
 
 const Events: React.FC = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -10,7 +12,7 @@ const Events: React.FC = () => {
       <div
         className="banner"
         style={{
-          backgroundImage: `url(${RedBanner})`,
+          backgroundImage: `url(${EventsBg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "350px",
@@ -48,7 +50,7 @@ const Events: React.FC = () => {
             className="inner-box"
             style={{
               height: "350px",
-              backgroundImage: "url(src/assets/event1.jpg)",
+              backgroundImage: `url(${Event1})`,
               backgroundSize: "cover",
             }}
           ></div>
@@ -96,7 +98,7 @@ const Events: React.FC = () => {
             className="inner-box"
             style={{
               height: "350px",
-              backgroundImage: "url(src/assets/event2.png)",
+              backgroundImage: `url(${Event2})`,
               backgroundSize: "cover",
             }}
           ></div>
