@@ -4,7 +4,7 @@ import './Home.css'
 import { Carousel, Card } from 'antd';
 import { Link } from "react-router-dom";
 
-import logo_light from "../../assets/logo_light.png"
+import Logo from "../../assets/cropper_logo.png"
 import CareerDevelopment from "../../assets/Career Development.jpg"
 import StrongNetwork from "../../assets/MarketWatch Alumni Network.jpg"
 
@@ -17,7 +17,7 @@ const Home: React.FC = () => {
         <div className="min-h-10000">
             {/* Banner Red */}
             <div className="bg-red-bg flex flex-col md:flex-row items-center justify-center h-fit gap-2.5 p-8">
-                <img className="object-cover h-32 md:h-auto w-full md:w-80" src={logo_light}/>
+                <img className="object-contain h-32 md:h-auto w-full md:w-80" src={Logo}/>
                 <h1 className="text-base text-white text-center align-middle">
                 Established in 2015, SUTD MarketWatch Club is the only student-led community at SUTD, exclusively designed for students interested in finance and investments.
                 <br></br><br></br>

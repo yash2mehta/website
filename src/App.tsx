@@ -17,7 +17,7 @@ import UnderConstruction from './UnderConstruction/UnderConstruction';
 
 function App() {
 	useEffect(() => {
-		document.title = 'Marketwatch';
+		document.title = 'SUTD Marketwatch Website';
 	  }, []);
 
 	return (
