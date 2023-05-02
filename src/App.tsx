@@ -1,6 +1,9 @@
 import "./App.css";
-import Navbar2 from "./components/Navbar/Navbar2";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect } from 'react';
+
+import Navbar2 from "./components/Navbar/Navbar2";
 import ClubStructure from "./AboutUs/ClubStructure";
 import ClubAdvisors from "./AboutUs/ClubAdvisors";
 import Testimonials from "./AboutUs/Testimonials";
@@ -13,6 +16,10 @@ import Events from './Events/Events';
 import UnderConstruction from './UnderConstruction/UnderConstruction';
 
 function App() {
+	useEffect(() => {
+		document.title = 'Marketwatch';
+	  }, []);
+
 	return (
 		<BrowserRouter>
 			<div className="root">
