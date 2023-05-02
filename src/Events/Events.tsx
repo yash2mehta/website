@@ -15,7 +15,7 @@ const Events: React.FC = () => {
           backgroundImage: `url(${EventsBg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "350px",
+          padding: "80px 0px",
         }}
       >
         <h1
@@ -35,14 +35,12 @@ const Events: React.FC = () => {
       </div>
       <RedBanner bannerText="Events"></RedBanner>
 
-      <div style={{ display: "flex" }}>
+      <div className="flex-col md:flex-row" style={{ display: "flex", padding: "30px", gap: "30px" }}>
         <div
           className="box"
           style={{
             height: "500px",
-            width: "400px",
-            marginTop: "30px",
-            marginLeft: "30px",
+            flex: "1",
             flexWrap: "wrap",
           }}
         >
@@ -88,9 +86,7 @@ const Events: React.FC = () => {
           className="box"
           style={{
             height: "500px",
-            width: "400px",
-            marginTop: "30px",
-            marginLeft: "30px",
+            flex: "1",
             flexWrap: "wrap",
           }}
         >
