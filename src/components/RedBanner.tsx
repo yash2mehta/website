@@ -9,7 +9,7 @@ const RedBanner = (props: { bannerText: string }) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        padding: "50px",
+        padding: "50px 0px",
       }}
     >
       <h1 style={{ fontWeight: "bold", fontSize: "200%", color: "#FFFFFF" }}>
