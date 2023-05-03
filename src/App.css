@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 .root {
   /* max-width: 1280px; */
   /* margin: 0 auto; */
@@ -19,6 +15,15 @@ body {
 body {
 	padding: 0;
 	margin: 0;
+}
+
+.body {
+  margin: 1.5rem 2.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .body {
+    margin: 1.5rem 0.5rem;
+  }
 }
 
 .logo {

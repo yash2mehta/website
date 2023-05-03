@@ -20,7 +20,7 @@ const ClubStructure = () => {
       <RedBanner bannerText="Mission | Vision"></RedBanner>
 
       {/* Mission and Vision */}
-      <div className="mx-10 my-6">
+      <div className="body">
         <div className="text-3xl text-primary-500 font-semibold text-center">
           Empowering Future Finance Leaders
         </div>
@@ -37,7 +37,7 @@ const ClubStructure = () => {
           </p>
         </div>
         {/* Blank Space */}
-        <div className="h-14"></div>
+        {/* <div className="h-14"></div> */}
       </div>
     </div>
   );
