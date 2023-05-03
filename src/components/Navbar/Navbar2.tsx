@@ -30,8 +30,8 @@ const CustomMenu = (props: { layout: string }) => {
           </span>
         }
       >
-        <Menu.Item key="mission_values">
-          <Link to="/aboutus/mission_values">Mission & Values</Link>
+        <Menu.Item key="mission_vision">
+          <Link to="/aboutus/mission_vision">Mission & Vision</Link>
         </Menu.Item>
         <Menu.Item key="clubstructure">
           <Link to="/aboutus/clubstructure">Club Structure</Link>

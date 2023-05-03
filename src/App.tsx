@@ -29,7 +29,7 @@ function App() {
 				<Routes>
 					<Route path='/' Component={Home} />
 					
-					<Route path="/aboutus/mission_values" Component={MissionVision} />
+					<Route path="/aboutus/mission_vision" Component={MissionVision} />
 					<Route path="/aboutus/clubstructure" Component={ClubStructure} />
 					<Route path="/aboutus/clubadvisors" Component={ClubAdvisors} />
 					<Route path="/aboutus/testimonials" Component={Testimonials} />
