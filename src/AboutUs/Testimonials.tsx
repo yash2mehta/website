@@ -24,8 +24,8 @@ const TestimonialSectionLeft = ({image, header, header2, text}: props) => {
             <img src={image}/>
         </div>
         <div className="flex flex-1 items-center">
-            <div className="mx-10">
-                <h1 className="text-4xl text-primary-300 font-bold my-0">{header}</h1>
+            <div className="text-center md:text-left">
+                <h1 className="text-3xl text-primary-300 font-bold my-0">{header}</h1>
                 {/* <h1 className="text-3xl text-primary-300 font-bold mt-0 mb-3">{header2}</h1> */}
                 <h2 className="text-base">{text}</h2>
             </div>
@@ -38,8 +38,8 @@ const TestimonialSectionRight = ({ image, header, header2, text }: props) => {
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 my-20 mx-10">
       <div className="flex flex-1 items-center">
-        <div className="mx-10">
-          <h1 className="text-4xl text-primary-300 font-bold my-0">{header}</h1>
+        <div className="text-center md:text-left">
+          <h1 className="text-3xl text-primary-300 font-bold my-0">{header}</h1>
           {/* <h1 className="text-3xl text-primary-300 font-bold mt-0 mb-3">
             {header2}
           </h1> */}
