@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useEffect } from 'react';
 
 import Navbar2 from "./components/Navbar/Navbar2";
+import MissionVision from "./AboutUs/MissionVision";
 import ClubStructure from "./AboutUs/ClubStructure";
 import ClubAdvisors from "./AboutUs/ClubAdvisors";
 import Testimonials from "./AboutUs/Testimonials";
@@ -28,7 +29,7 @@ function App() {
 				<Routes>
 					<Route path='/' Component={Home} />
 					
-					<Route path="/aboutus/mission_values" Component={UnderConstruction} />
+					<Route path="/aboutus/mission_values" Component={MissionVision} />
 					<Route path="/aboutus/clubstructure" Component={ClubStructure} />
 					<Route path="/aboutus/clubadvisors" Component={ClubAdvisors} />
 					<Route path="/aboutus/testimonials" Component={Testimonials} />
