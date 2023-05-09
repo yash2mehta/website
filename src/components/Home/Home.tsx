@@ -219,7 +219,7 @@ const Home: React.FC = () => {
 
                 </div>
                 <div style={{width: '100%'}}>
-                    <Carousel afterChange={onChange} autoplay dots={{className: "carousel-dots"}}>
+                    <Carousel afterChange={onChange} autoplay autoplaySpeed={7000} dots={{className: "carousel-dots"}}>
                     {/* <Carousel afterChange={onChange} dots={{className: "carousel-dots"}}> */}
                         <div>
                             <h3 className="carousel-slide bg-gray-50">
