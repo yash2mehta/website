@@ -102,10 +102,10 @@ const Home: React.FC = () => {
             </div>
 
             {/* Career Dev and Network */}
-            <div className="bg-white grid grid-cols-1 gap-4 text-center lg:px-16">
+            <div className="bg-white grid grid-cols-1 gap-4 text-center md:gap-0 lg:px-16">
                 <div className="flex flex-1 flex-col items-center my-5 md:flex-row">
                     <img className="md:w-96 lg:w-1/3 lg:mx-4" src={CareerDevelopment}/>
-                    <div className="mx-10 md:text-left">
+                    <div className="mx-10 md:mr-4 md:text-left">
                         <h1 className="text-2xl text-primary-300 font-bold my-5 md:mt-0">Career Development</h1>
                         <h2 className="text-base text-black">
                         We recognize the potential of our talented engineering students and aim to provide a structured training program, along with guidance of industry professionals, to develop career-oriented skills in the field of finance. This program emphasizes on inculcating multi-disciplinary skills and will cover topics like Equity Research, Portfolio Management, Macroeconomics, Financial Technology, Quantitative Finance. 
@@ -114,7 +114,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="flex flex-1 flex-col items-center my-5 md:flex-row-reverse">
                     <img className="md:w-96 lg:w-1/3 lg:mx-4" src={StrongNetwork}/>
-                    <div className="mx-10 md:text-left">
+                    <div className="mx-10 md:ml-4 md:text-left">
                         <h1 className="text-2xl text-primary-300 font-bold my-5 md:mt-0">Strong Network</h1>
                         <h2 className="text-base text-black">
                         Our extensive alumni network provides a platform for members to connect with industry professionals, gain invaluable insights into the working world, and access a wide range of career opportunities. We take pride in the achievements of our alumni and welcome them back as valuable mentors to our current members. 
@@ -134,7 +134,7 @@ const Home: React.FC = () => {
             <div className="bg-light-red grid grid-cols-1 gap-4 md:grid-cols-3 text-center py-5">
                 <div className="flex flex-1 flex-col justify-between items-center">
                     <div className="mx-10">
-                        <h1 className="text-2xl text-primary-300 font-bold my-3">Join MarketWatch as a Member</h1>
+                        <h1 className="text-xl text-primary-300 font-bold my-3">Join MarketWatch as a Member</h1>
                         <h2 className="text-sm text-black">
                         We invite all SUTD students only to join us as a member. By doing so, you will obtain access to exclusive events, educational resources, networking opportunities, industry visits and many more activities, which are exclusively for the members. You will also receive priority in attending any public events that we host!
                         </h2>
@@ -156,7 +156,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="flex flex-1 flex-col justify-between items-center">
                     <div className="mx-10">
-                        <h1 className="text-2xl text-primary-300 font-bold my-3">Collaborate with Us</h1>
+                        <h1 className="text-xl text-primary-300 font-bold my-3">Collaborate with Us</h1>
                         <h2 className="text-sm text-black">
                         We collaborate with corporations for two-fold purpose: 
                         <br></br>
@@ -182,7 +182,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="flex flex-1 flex-col justify-between items-center">
                     <div className="mx-10">
-                        <h1 className="text-2xl text-primary-300 font-bold my-3">Stay Up-to-Date</h1>
+                        <h1 className="text-xl text-primary-300 font-bold my-3">Stay Up-to-Date</h1>
                         <h2 className="text-sm text-black">
                         Join our newsletter to stay updated on all our events and activities. We welcome anyone interested in finance to join our community and learn from our talented members and industry partners.
                         </h2>
