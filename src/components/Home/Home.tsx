@@ -16,7 +16,7 @@ const Home: React.FC = () => {
     return(
         <div className="min-h-10000">
             {/* Banner Red */}
-            <div className="bg-red-bg flex flex-col items-center justify-center h-fit gap-6 py-8 px-4 lg:gap-2.5 lg:py-16 lg:flex-row">
+            <div className="bg-red-bg flex flex-col items-center justify-center h-fit gap-6 p-8 lg:gap-2.5 lg:py-16 lg:flex-row">
                 <img className="object-contain max-h-32 w-full lg:h-auto lg:w-2/5 lg:px-8" src={Logo}/>
                 <h1 className="text-base text-white text-center align-middle lg:text-left lg:font-bold">
                 Established in 2015, SUTD MarketWatch Club is the only student-led community at SUTD, exclusively designed for students interested in finance and investments.
@@ -26,10 +26,10 @@ const Home: React.FC = () => {
             </div>
 
             {/* Three Columns */}
-            <div className="bg-white grid grid-cols-1 gap-y-4 gap-x-10 md:grid-cols-3 md:grid-rows-[auto_auto_auto] md:grid-flow-col text-center pb-5 px-8">
+            <div className="bg-white grid grid-cols-1 gap-x-10 text-center pb-5 px-8 lg:grid-cols-3 lg:grid-rows-[auto_auto_auto] lg:grid-flow-col">
                 {/* <div className="flex flex-1 flex-col justify-between items-center"> */}
                     {/* <div className="mx-10"> */}
-                        <h1 className="text-4xl text-primary-300 font-bold my-5">Our Activities</h1>
+                        <h1 className="text-4xl text-primary-300 font-bold my-5 lg:text-xl">Our Activities</h1>
                         <h2 className="text-base text-black">
                         At SUTD MarketWatch Club, we offer a wide range of activities, including workshops, guest lectures, panel sessions, networking events and case competitions. Ultimately, we provide a welcoming space to learn, grow, and connect with others 😊
                         </h2>
@@ -39,12 +39,13 @@ const Home: React.FC = () => {
                         placeSelf: "center",
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
-                        padding: "10px",
+                        padding: "3px 10px",
                         fontSize: "100%",
                         border: "none",
                         cursor: "pointer",
                         borderRadius: "30px",
                         marginTop: "20px",
+                        marginBottom: "16px",
                     }}
                     >
                         Learn more
@@ -52,7 +53,7 @@ const Home: React.FC = () => {
                 {/* </div> */}
                 {/* <div className="flex flex-1 flex-col justify-between items-center"> */}
                     {/* <div className="mx-10"> */}
-                        <h1 className="text-4xl text-primary-300 font-bold my-5">Industry Collaboration</h1>
+                        <h1 className="text-4xl text-primary-300 font-bold my-5 lg:text-xl">Industry Collaboration</h1>
                         <h2 className="text-base text-black">
                         Our club is committed to collaborating with industry leaders to create opportunities for our members to gain real-world experience and build their professional network. By partnering with us, you can help shape the future of finance and make a meaningful impact in developing the next generation of finance professionals. Contact us to explore ways of collaborating!
                         </h2>
@@ -62,12 +63,13 @@ const Home: React.FC = () => {
                         placeSelf: "center",
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
-                        padding: "10px",
+                        padding: "3px 10px",
                         fontSize: "100%",
                         border: "none",
                         cursor: "pointer",
                         borderRadius: "30px",
                         marginTop: "20px",
+                        marginBottom: "16px",
                     }}
                     >
                         Learn more
@@ -75,7 +77,7 @@ const Home: React.FC = () => {
                 {/* </div> */}
                 {/* <div className="flex flex-1 flex-col justify-between items-center"> */}
                     {/* <div className="mx-10"> */}
-                        <h1 className="text-4xl text-primary-300 font-bold my-5">Industry Research</h1>
+                        <h1 className="text-4xl text-primary-300 font-bold my-5 lg:text-xl">Industry Research</h1>
                         <h2 className="text-base text-black">
                         Our research analysts and members conduct investment research, on fundamental analysis and technical analysis. They share these insights through published reports and pitch their ideas to industry leaders.
                         </h2>
@@ -85,12 +87,13 @@ const Home: React.FC = () => {
                         placeSelf: "center",
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
-                        padding: "10px",
+                        padding: "3px 10px",
                         fontSize: "100%",
                         border: "none",
                         cursor: "pointer",
                         borderRadius: "30px",
                         marginTop: "20px",
+                        marginBottom: "16px",
                     }}
                     >
                         Learn more
@@ -103,7 +106,7 @@ const Home: React.FC = () => {
                 <div className="flex flex-1 flex-col items-center my-5">
                     <img src={CareerDevelopment}/>
                     <div className="mx-10">
-                        <h1 className="text-4xl text-primary-300 font-bold my-5">Career Development</h1>
+                        <h1 className="text-2xl text-primary-300 font-bold my-5">Career Development</h1>
                         <h2 className="text-base text-black">
                         We recognize the potential of our talented engineering students and aim to provide a structured training program, along with guidance of industry professionals, to develop career-oriented skills in the field of finance. This program emphasizes on inculcating multi-disciplinary skills and will cover topics like Equity Research, Portfolio Management, Macroeconomics, Financial Technology, Quantitative Finance. 
                         </h2>
@@ -112,7 +115,7 @@ const Home: React.FC = () => {
                 <div className="flex flex-1 flex-col items-center my-5">
                     <img src={StrongNetwork}/>
                     <div className="mx-10">
-                        <h1 className="text-4xl text-primary-300 font-bold my-5">Strong Network</h1>
+                        <h1 className="text-2xl text-primary-300 font-bold my-5">Strong Network</h1>
                         <h2 className="text-base text-black">
                         Our extensive alumni network provides a platform for members to connect with industry professionals, gain invaluable insights into the working world, and access a wide range of career opportunities. We take pride in the achievements of our alumni and welcome them back as valuable mentors to our current members. 
                         </h2>
