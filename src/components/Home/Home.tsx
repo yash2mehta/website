@@ -102,20 +102,20 @@ const Home: React.FC = () => {
             </div>
 
             {/* Career Dev and Network */}
-            <div className="bg-white grid grid-cols-1 gap-4 md:grid-cols-2 text-center">
-                <div className="flex flex-1 flex-col items-center my-5">
-                    <img src={CareerDevelopment}/>
-                    <div className="mx-10">
-                        <h1 className="text-2xl text-primary-300 font-bold my-5">Career Development</h1>
+            <div className="bg-white grid grid-cols-1 gap-4 text-center lg:px-16">
+                <div className="flex flex-1 flex-col items-center my-5 md:flex-row">
+                    <img className="md:w-96 lg:w-1/3 lg:mx-4" src={CareerDevelopment}/>
+                    <div className="mx-10 md:text-left">
+                        <h1 className="text-2xl text-primary-300 font-bold my-5 md:mt-0">Career Development</h1>
                         <h2 className="text-base text-black">
                         We recognize the potential of our talented engineering students and aim to provide a structured training program, along with guidance of industry professionals, to develop career-oriented skills in the field of finance. This program emphasizes on inculcating multi-disciplinary skills and will cover topics like Equity Research, Portfolio Management, Macroeconomics, Financial Technology, Quantitative Finance. 
                         </h2>
                     </div>
                 </div>
-                <div className="flex flex-1 flex-col items-center my-5">
-                    <img src={StrongNetwork}/>
-                    <div className="mx-10">
-                        <h1 className="text-2xl text-primary-300 font-bold my-5">Strong Network</h1>
+                <div className="flex flex-1 flex-col items-center my-5 md:flex-row-reverse">
+                    <img className="md:w-96 lg:w-1/3 lg:mx-4" src={StrongNetwork}/>
+                    <div className="mx-10 md:text-left">
+                        <h1 className="text-2xl text-primary-300 font-bold my-5 md:mt-0">Strong Network</h1>
                         <h2 className="text-base text-black">
                         Our extensive alumni network provides a platform for members to connect with industry professionals, gain invaluable insights into the working world, and access a wide range of career opportunities. We take pride in the achievements of our alumni and welcome them back as valuable mentors to our current members. 
                         </h2>
@@ -124,8 +124,8 @@ const Home: React.FC = () => {
             </div>
 
             {/* Banner Red */}
-            <div className="bg-red-bg flex flex-col items-center justify-center h-fit gap-2.5 p-8">
-                <h1 className="text-4xl text-white text-center align-middle">
+            <div className="bg-red-bg flex flex-col items-center justify-center h-fit gap-2.5 px-8 py-4">
+                <h1 className="text-3xl text-white text-center align-middle">
                 “An investment in knowledge pays the best interest” - Benjamin Franklin
                 </h1>
             </div>
