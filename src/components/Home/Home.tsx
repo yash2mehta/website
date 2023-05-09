@@ -16,25 +16,27 @@ const Home: React.FC = () => {
     return(
         <div className="min-h-10000">
             {/* Banner Red */}
-            <div className="bg-red-bg flex flex-col md:flex-row items-center justify-center h-fit gap-2.5 p-8">
-                <img className="object-contain h-32 md:h-auto w-full md:w-80" src={Logo}/>
-                <h1 className="text-base text-white text-center align-middle">
+            <div className="bg-red-bg flex flex-col items-center justify-center h-fit gap-6 py-8 px-4 lg:gap-2.5 lg:py-16 lg:flex-row">
+                <img className="object-contain max-h-32 w-full lg:h-auto lg:w-2/5 lg:px-8" src={Logo}/>
+                <h1 className="text-base text-white text-center align-middle lg:text-left lg:font-bold">
                 Established in 2015, SUTD MarketWatch Club is the only student-led community at SUTD, exclusively designed for students interested in finance and investments.
                 <br></br><br></br>
                 At SUTD MarketWatch Club, our mission is to empower students with financial and investment knowledge to achieve financial literacy and independence, while providing a supportive learning environment that nurtures personal and professional growth.
                 </h1>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 text-center mb-5">
-                <div className="flex flex-1 flex-col items-center">
-                    <div className="mx-10">
+            {/* Three Columns */}
+            <div className="bg-white grid grid-cols-1 gap-y-4 gap-x-10 md:grid-cols-3 md:grid-rows-[auto_auto_auto] md:grid-flow-col text-center pb-5 px-8">
+                {/* <div className="flex flex-1 flex-col justify-between items-center"> */}
+                    {/* <div className="mx-10"> */}
                         <h1 className="text-4xl text-primary-300 font-bold my-5">Our Activities</h1>
                         <h2 className="text-base text-black">
                         At SUTD MarketWatch Club, we offer a wide range of activities, including workshops, guest lectures, panel sessions, networking events and case competitions. Ultimately, we provide a welcoming space to learn, grow, and connect with others 😊
                         </h2>
-                    </div>
+                    {/* </div> */}
                     <Link to="/events"
                     style={{
+                        placeSelf: "center",
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
                         padding: "10px",
@@ -47,16 +49,17 @@ const Home: React.FC = () => {
                     >
                         Learn more
                     </Link>
-                </div>
-                <div className="flex flex-1 flex-col items-center">
-                    <div className="mx-10">
+                {/* </div> */}
+                {/* <div className="flex flex-1 flex-col justify-between items-center"> */}
+                    {/* <div className="mx-10"> */}
                         <h1 className="text-4xl text-primary-300 font-bold my-5">Industry Collaboration</h1>
                         <h2 className="text-base text-black">
                         Our club is committed to collaborating with industry leaders to create opportunities for our members to gain real-world experience and build their professional network. By partnering with us, you can help shape the future of finance and make a meaningful impact in developing the next generation of finance professionals. Contact us to explore ways of collaborating!
                         </h2>
-                    </div>
+                    {/* </div> */}
                     <Link to="/partners"
                     style={{
+                        placeSelf: "center",
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
                         padding: "10px",
@@ -69,16 +72,17 @@ const Home: React.FC = () => {
                     >
                         Learn more
                     </Link>
-                </div>
-                <div className="flex flex-1 flex-col items-center">
-                    <div className="mx-10">
+                {/* </div> */}
+                {/* <div className="flex flex-1 flex-col justify-between items-center"> */}
+                    {/* <div className="mx-10"> */}
                         <h1 className="text-4xl text-primary-300 font-bold my-5">Industry Research</h1>
                         <h2 className="text-base text-black">
                         Our research analysts and members conduct investment research, on fundamental analysis and technical analysis. They share these insights through published reports and pitch their ideas to industry leaders.
                         </h2>
-                    </div>
+                    {/* </div> */}
                     <Link to="/research/researchreports"
                     style={{
+                        placeSelf: "center",
                         backgroundColor: "#E55C56",
                         color: "#FFFFFF",
                         padding: "10px",
@@ -91,10 +95,11 @@ const Home: React.FC = () => {
                     >
                         Learn more
                     </Link>
-                </div>
+                {/* </div> */}
             </div>
 
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 text-center">
+            {/* Career Dev and Network */}
+            <div className="bg-white grid grid-cols-1 gap-4 md:grid-cols-2 text-center">
                 <div className="flex flex-1 flex-col items-center my-5">
                     <img src={CareerDevelopment}/>
                     <div className="mx-10">
@@ -122,8 +127,9 @@ const Home: React.FC = () => {
                 </h1>
             </div>
 
+            {/* Three Boxes */}
             <div className="bg-light-red grid grid-cols-1 gap-4 md:grid-cols-3 text-center py-5">
-                <div className="flex flex-1 flex-col items-center">
+                <div className="flex flex-1 flex-col justify-between items-center">
                     <div className="mx-10">
                         <h1 className="text-2xl text-primary-300 font-bold my-3">Join MarketWatch as a Member</h1>
                         <h2 className="text-sm text-black">
@@ -145,7 +151,7 @@ const Home: React.FC = () => {
                         Learn more
                     </Link>
                 </div>
-                <div className="flex flex-1 flex-col items-center">
+                <div className="flex flex-1 flex-col justify-between items-center">
                     <div className="mx-10">
                         <h1 className="text-2xl text-primary-300 font-bold my-3">Collaborate with Us</h1>
                         <h2 className="text-sm text-black">
@@ -171,7 +177,7 @@ const Home: React.FC = () => {
                         Learn more
                     </Link>
                 </div>
-                <div className="flex flex-1 flex-col items-center">
+                <div className="flex flex-1 flex-col justify-between items-center">
                     <div className="mx-10">
                         <h1 className="text-2xl text-primary-300 font-bold my-3">Stay Up-to-Date</h1>
                         <h2 className="text-sm text-black">
@@ -198,6 +204,7 @@ const Home: React.FC = () => {
                 </div> */}
             </div>
 
+            {/* Testimonials */}
             <div className="flex flex-1 flex-col items-center bg-gray-50">
                 <div className="mx-10 flex flex-col items-center">
                     <h1 className="text-2xl text-primary-300 font-bold my-3">Testimonials</h1>

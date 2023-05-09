@@ -29,6 +29,9 @@ export default {
         dmsans: ["DM Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
+      fontSize: {
+        base: ['16px', '20px'],
+      },
       content: {
         // evolvetext: "url('./assets/EvolveText.png')",
         // abstractwaves: "url('./assets/AbstractWaves.png')",
